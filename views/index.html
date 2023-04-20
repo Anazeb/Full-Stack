@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Music Albums</title>
+  <style>
+    label{
+      display:block;
+      margin:20px
+    }
+    table,th,td{
+      border: 1px black;
+      border-collapse: collapse;
+    }
+    th,td{
+      padding:15px;
+      text-align: left;
+    }
+
+    .topbar, span{
+      display: inline-block
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <p></p>
+  <div class="topbar">
+    <span>
+  <label>title</label>
+  <input type="text" id="titleText" placeholder="enter title"></input>
+  </span>
+  <span>
+  <label>artist</label>
+  <input type="text" id="artistText" placeholder="enter artist"></input>
+  </span>
+  <span>
+  <label>year</label>
+  <input type="text" id="yearText" placeholder="enter year"></input>
+  </span>
+
+  <button type="button" id="addButton">Add album</button>
+  </div>
+    <table id="details_Album"></table>
+    <table id="music_Albums"></table>
+
+  <p></p>
+</body>
+<script src="eventListeners.js"></script>
+
+</html>
