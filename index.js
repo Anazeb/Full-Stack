@@ -17,7 +17,8 @@ app.use(cors({
 
 const uri = process.env.URI
 const port = process.env.PORT
-
+console.log(uri)
+console.log(port)
 
 mongoose.connect(uri,{useNewUrlParser: true, useUnifiedTopology: true})
   .then(()=>console.log("Connection established")).catch(error => console.error('Error in connection', error))
