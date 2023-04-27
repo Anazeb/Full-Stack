@@ -4,7 +4,7 @@ let deleteData = document.getElementById("deleteButton");
 
 createTable()
 async function addAlbum(album) {
-  const result = await fetch('http://localhost:3000/api/albums', {
+  const result = await fetch('https://music-album-store-fullstack.onrender.com/api/albums', {
     method: 'POST',
     body: JSON.stringify(album),
     headers: { 'content-type': 'application/json' }
@@ -25,7 +25,7 @@ addData.addEventListener('click', async () => {
 });
 async function getAlbums() {
   try {
-    var result = await fetch('http://localhost:3000/api/albums', {
+    var result = await fetch('https://music-album-store-fullstack.onrender.com/api/albums', {
       method: 'GET',
       headers: { 'content-type': 'application/json' }
     });
@@ -39,7 +39,7 @@ async function getAlbums() {
 
 
 async function updateAlbum(id, album) {
-  const result = await fetch('http://localhost:3000/api/albums/'+id, {
+  const result = await fetch('https://music-album-store-fullstack.onrender.com/api/albums/'+id, {
     method: 'PUT',
     body: JSON.stringify(album),
     headers: { 'content-type': 'application/json' }
@@ -62,7 +62,7 @@ addData.addEventListener('click', async () => {
 });
 
 async function deleteAlbum(id, album) {
-  const result = await fetch('http://localhost:3000/api/albums/'+id, {
+  const result = await fetch('https://music-album-store-fullstack.onrender.com/api/albums/'+id, {
     method: 'DELETE',
     body: JSON.stringify(album),
     headers: { 'content-type': 'application/json' }
